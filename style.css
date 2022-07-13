@@ -15,7 +15,14 @@ header {
   
   position: fixed;
   z-index: 4;
+  display: flex;
+  font-size: 24px;
+  gap: 8px;
+
 }
+
+
+
 
 #hero {
   min-height: 700px;
@@ -41,6 +48,10 @@ header {
 #hero-box>h1 {
   font-size: 54px;
   line-height: 90%;
+}
+
+#hero-box>h1>span {
+  font-size: 60px;
 }
 
 #hero-box>p {
