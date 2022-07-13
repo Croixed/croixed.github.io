@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-  --dark: rgb(100, 100, 100);
-  --darker: rgb(77, 77, 77);
-  --darkest: rgb(45, 45, 45);
+  --dark: #52525b;
+  --darker: #3f3f46;
+  --darkest: #27272a;
 
-  --box: rgb(111, 111, 111);
+  --box: #71717a51;
+  --accent: #d4d4d8;
 }
 
 * {
@@ -161,9 +162,9 @@ li {
   margin: 0 auto;
   background-color: var(--box);
 
-  border-left: 14px solid;
-  border-radius: 14px;
-  border-color: var(--darkest);
+  border-left: 10px solid;
+  border-radius: 10px;
+  border-color: var(--accent);
   padding: 8px;
 }
 
