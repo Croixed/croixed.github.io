@@ -126,18 +126,18 @@ span>a {
   overflow: hidden;
 }
 
-.marquee {
+.scroll-container {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 42s linear infinite;
+  animation: scroller 82s linear infinite;
 }
 
-.marquee ol {
+.scroll-container ol {
   display: inline-block;
 }
 
-@keyframes marquee {
+@keyframes scroller {
   0% {
     transform: translate3d(0, 0, 0);
   }
@@ -148,8 +148,8 @@ span>a {
 
 ol li {
   margin: 20px;
-  font-size: 2em;
-  padding: 10px 30px;
+  font-size: 1.6em;
+  padding: 8px 24px;
 }
 
 
