@@ -77,6 +77,44 @@ span>a {
   font-size: 22px;
 }
 
+#hero {
+  position: relative;
+}
+
+#scroll-down {
+  position: absolute;
+  bottom: 10px;
+
+  animation-duration: 1100ms;
+  animation-iteration-count: infinite;
+  animation-name: scroll-bounce;
+  animation-timing-function: linear;
+
+  z-index: 3;
+
+  transition: opacity 700ms linear;
+  opacity: 0;
+  font-family: sans-serif;
+}
+
+#scroll-down.show {
+  transition: opacity 700ms linear;
+  opacity: 1;
+}
+
+@keyframes scroll-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-11px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 .section-title {
   text-align: center;
@@ -159,7 +197,7 @@ li {
 .education {
   box-sizing: border-box;
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: var(--box);
 
   border-left: 10px solid;
@@ -197,6 +235,7 @@ footer {
     width: 94%;
     padding: 0;
   }
+
 
   .project {
     width: 96%;
