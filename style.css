@@ -7,6 +7,8 @@
 
   --box: #71717a51;
   --accent: #d4d4d8;
+
+  scroll-behavior: smooth; /* might remove later */
 }
 
 * {
@@ -55,7 +57,8 @@ span>a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
 }
 
 #hero-box {
@@ -94,7 +97,10 @@ span>a {
 
   transition: opacity 700ms linear;
   opacity: 0;
+
   font-family: sans-serif;
+  font-size: 1.1em;
+  color:rgb(233, 233, 233);
 }
 
 #scroll-down.show {
@@ -112,6 +118,26 @@ span>a {
   100% {
     transform: translateY(0);
   }
+}
+
+/* testing */
+ol {
+  width: 80%;
+  margin: 0 auto;
+  animation: marquee 3s linear infinite;
+  position: absolute;
+}
+
+/* testing */
+ol > li {
+  color: green;
+  
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(100%, 0); }
 }
 
 

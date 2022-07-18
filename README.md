@@ -1,2 +1,2 @@
 # croixed.github.io
-testing for portfolio
+My portfolio. Very lightweight - made without any framework bloat.
