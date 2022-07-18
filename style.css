@@ -121,25 +121,36 @@ span>a {
 }
 
 /* testing */
-ol {
-  width: 80%;
-  margin: 0 auto;
-  animation: marquee 3s linear infinite;
-  position: absolute;
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
 }
 
-/* testing */
-ol > li {
-  color: green;
-  
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 42s linear infinite;
 }
 
-/* Make it move */
+.marquee ol {
+  display: inline-block;
+}
+
 @keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(100%, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
+ol li {
+  margin: 20px;
+  font-size: 2em;
+  padding: 10px 30px;
+}
 
 
 .section-title {
