@@ -9,12 +9,12 @@ window.addEventListener('scroll', () => {
 });
 
 
-
 const mySkills = ["HTML", "CSS", "JavaScript", "Bootstrap", "Git", "Python", "Linux", "Node", "mySQL", "Spring"];
 const animUl = document.getElementById("anim-ul");
 const animUl2 = document.getElementById("anim-ul-2");
 
-// generate enough content that it wraps without snapping
+// Generate enough content that it wraps scrolling without snapping.
+// This is pretty weird so I'll probably rewrite it later
 for (let i = 0; i < 4; i++) {
   mySkills.forEach(item => {
     let listItem = document.createElement("li");
