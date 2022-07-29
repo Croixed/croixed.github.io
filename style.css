@@ -19,7 +19,6 @@
 }
 
 
-
 header {
   width: 100vw;
   padding: 10px;
@@ -188,10 +187,7 @@ ol li {
 }
 
 .project {
-  width: 60%;
   margin: 16px auto;
-  
-
 
   text-align: center;
   z-index: 2;
@@ -251,10 +247,13 @@ li {
   border-radius: 4px;
 }
 
+.project,
+.education {
+  width: min(60%, 850px);
+}
 
 .education {
   box-sizing: border-box;
-  width: 60%;
   margin: 20px auto;
   background-color: var(--box);
 
