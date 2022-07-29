@@ -47,7 +47,8 @@ span>a {
 
 
 #hero {
-  min-height: 700px;
+  /* min-height: 700px; */
+  height: 90vh;
   
   display: grid;
   place-items: center;
@@ -130,7 +131,7 @@ span>a {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: scroller 82s linear infinite;
+  animation: scroller 122s linear infinite;
 }
 
 .scroll-container ol {
@@ -158,11 +159,9 @@ ol li {
   position: absolute;
   z-index: 2;
 
-  
-
   width: 32%; 
   height: 37px;
-  
+
 }
 
 .fade-box-left {

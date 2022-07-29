@@ -1,5 +1,6 @@
 const scroll = document.querySelector('#scroll-down');
 
+// make the scroll down div disappear when the page is scrolled down
 window.addEventListener('scroll', () => {
   if (window.scrollY > 290) {
     scroll.classList.remove('show');
@@ -10,16 +11,21 @@ window.addEventListener('scroll', () => {
 
 
 const mySkills = ["HTML", "CSS", "JavaScript", "Bootstrap", "Git", "Python", "Linux", "Node", "mySQL", "Spring"];
-const animUl = document.getElementById("anim-ul");
-const animUl2 = document.getElementById("anim-ul-2");
+const scrollContainer = document.querySelector(".scroll-container");
 
-// Generate enough content that it wraps scrolling without snapping.
-// This is pretty weird so I'll probably rewrite it later
-for (let i = 0; i < 4; i++) {
+// create a set number of lists for the scrolling animation
+for (let i = 0; i < 12; i++) {
+
+  // generate an ordered list
+  let tempList = document.createElement("ol");
+
+  // and add list elements to it
   mySkills.forEach(item => {
     let listItem = document.createElement("li");
     listItem.textContent = item;
-    animUl.appendChild(listItem);
-    animUl2.appendChild(listItem.cloneNode(true));
+    tempList.appendChild(listItem);
   });
+
+  // then add list to the scroll container
+  scrollContainer.appendChild(tempList);
 }
